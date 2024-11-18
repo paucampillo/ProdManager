@@ -25,5 +25,5 @@ Antes de ejecutar este proyecto, asegúrate de tener instalados los siguientes e
 ### 1. Clona este repositorio
 
 ```bash
-git clone https://github.com/tu_usuario/prod-manager-app.git
-cd prod-manager-app
+git clone https://github.com/paucampillo/ProdManager.git
+cd ProdManager
