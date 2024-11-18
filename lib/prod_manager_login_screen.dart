@@ -8,26 +8,22 @@ class ProdManagerLoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Container(
-          constraints: const BoxConstraints(maxWidth: 450),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                width: 360,
-                padding: const EdgeInsets.symmetric(vertical: 105, horizontal: 38),
-                color: const Color(0xFFE25656),
-                child: const Stack(
-                  children: [
-                    BackgroundImage(),
-                    LoginForm(),
-                  ],
-                ),
-              ),
-            ],
+      body: Stack(
+        children: [
+          Container(
+            color: const Color(0xFFE25656), // Color de fondo detrás de la imagen
           ),
-        ),
+          const BackgroundImage(), // Imagen de fondo
+          SingleChildScrollView(
+            child: Padding(
+              padding: EdgeInsets.symmetric(
+                vertical: MediaQuery.of(context).size.height * 0.1,
+                horizontal: MediaQuery.of(context).size.width * 0.1,
+              ),
+              child: const LoginForm(), // Formulario de login
+            ),
+          ),
+        ],
       ),
     );
   }

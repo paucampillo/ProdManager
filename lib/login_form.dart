@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prod_manager/home/my_component.dart';
 
 class LoginForm extends StatefulWidget {
@@ -46,8 +47,8 @@ class _LoginFormState extends State<LoginForm> {
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  Image.network(
-                    'https://cdn.builder.io/api/v1/image/assets/TEMP/708ca329309df2a2232b70df40d7e2760dce9b1241ab7f0ed74949f30c6c033d?placeholderIfAbsent=true&apiKey=78bb60a9af11494fa2c2825e636bb6ea',
+                  SvgPicture.asset(
+                    '/images/minilogolaviniaLOGIN.svg',
                     width: 33,
                     height: 47,
                     fit: BoxFit.contain,
@@ -100,13 +101,15 @@ class _LoginFormState extends State<LoginForm> {
                   if (_formKey.currentState!.validate()) {
                     _formKey.currentState!.save();
                     // TODO: Implement login logic
+                    if (_username == 'lavinia' && _password == 'lavinia') {
+                      Navigator.pushNamed(context, '/home');
 
-                    Navigator.pushNamed(context, '/home');
+                    };
                   }
                 },
                 child: const Text(
                   'Inicia Sessió',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                 ),
               ),
               const SizedBox(height: 16),
@@ -125,12 +128,18 @@ class _LoginFormState extends State<LoginForm> {
               ),
               const SizedBox(height: 48),
               Center(
+                child: GestureDetector(
+                  onTap: () {
+                      // TODO: Implement Google login logic
+                  },
                 child: Image.network(
+                    // TODO: Replace this image URL with a real image logo_google i fondo vermell
                   'https://cdn.builder.io/api/v1/image/assets/TEMP/4ac61922402455010674e242f857417f0fdff8add8083ecbd654104ec2133954?placeholderIfAbsent=true&apiKey=78bb60a9af11494fa2c2825e636bb6ea',
                   width: 64,
                   height: 64,
                   fit: BoxFit.contain,
                 ),
+              ),
               ),
             ],
           ),
