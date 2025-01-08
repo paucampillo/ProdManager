@@ -2,6 +2,11 @@
 
 ProdManager és una start-up que ofereix una eina de gestió per optimitzar les assignacions de recursos humans i materials. Tot i haver començat treballant per una empresa del sector audiovisual, la nostra solució és útil per qualsevol empresa amb necessitats de coordinació de treballadors i recursos. La nostra proposta es basa en millorar la qualitat de vida tant del personal encarregat d’organitzar grans volums d’empleats i materials com la dels propis treballadors, aportant una solució integral de comunicació i replanificació automatitzada per a empleats i administració.
 
+- Héctor Rodríguez (Project Manager (PM))
+- [Pau Campillo](https://github.com/paucampillo) (Full-Stack Tech Lead & Product Designer)
+- Juan Carlos Rubio (Chief Financial Officer (CFO))
+- Sergi Pla (Chief Executive Officer (CEO))
+
 ## Descripció de la solució
 
 ProdManager ajuda les empreses a gestionar els recursos (humans i materials) d'una manera més eficient, evitant els processos manuals i millorant la comunicació entre el personal de producció i els treballadors. La nostra aplicació utilitza un algorisme propi per a la replanificació automatitzada, que suggereix assignacions d'empleats basant-se en paràmetres personalitzables per l'usuari. Aquesta solució elimina la necessitat de gestionar diverses fonts d'informació (com Excel o WhatsApp) i permet una optimització dels recursos que resulta en una reducció de costos i una major eficiència.
